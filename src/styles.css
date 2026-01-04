@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f7f7f7; }
+.app { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+.top { display:flex; justify-content:space-between; align-items:center; }
+.header { display:flex; align-items:center }
+.filters { display:flex; gap:8px; margin:16px 0; flex-wrap:wrap; align-items:center }
+.filters input, .filters select { padding:8px; }
+.meta { margin:8px 0; color:#444 }
+.pagination { display:flex; gap:8px; align-items:center; margin-top:12px }
+.pagination .pages { display:flex; gap:6px }
+.pagination button { padding:6px 8px; border-radius:4px }
+.pagination button.active { background:#1976d2; color:#fff }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:16px; }
+.card { background:#fff; border-radius:6px; padding:12px; display:flex; gap:12px; align-items:center; }
+.card img { width:96px; height:96px; object-fit:cover; border-radius:6px; background:#f3f3f3; flex-shrink:0 }
+.info { flex:1 }
+.info h3 { margin:0 0 6px 0; font-size:16px }
+.category { margin:0; color:#666; font-size:12px }
+.price { font-weight:700 }
+.instock { color:green }
+.outstock { color:#c0392b }
+button { padding:8px 10px; border:0; background:#1976d2; color:#fff; border-radius:4px; cursor:pointer }
+button:disabled { background:#aaa; cursor:not-allowed }
+.cart { border-left:1px solid #ddd; padding-left:12px }
+.cart-empty { color:#666 }
+.cart-summary { display:flex; gap:8px }
+.cart-list { list-style:none; padding:0; margin:8px 0 0 0 }
+.cart-item { display:flex; justify-content:space-between; align-items:center }
+.qty { display:flex; gap:6px; align-items:center }
+.qty input { width:44px; text-align:center }
+.empty { padding:20px; background:#fff; border-radius:6px }
+.footer { text-align:center; color:#888; margin:24px 0 }
+.muted { color:#666; font-size:12px }
+.error { color:#c0392b; margin:8px 0 }
+
+.cart-button { padding:8px 12px; background:#1976d2; color:#fff; border:0; border-radius:6px; cursor:pointer }
+
+.drawer { position:fixed; top:0; right:-420px; width:400px; height:100%; background:#fff; box-shadow:-8px 0 20px rgba(0,0,0,0.12); transition:right .25s; z-index:60 }
+.drawer.open { right:0 }
+.drawer-inner { padding:16px; display:flex; flex-direction:column; height:100% }
+.drawer-header { display:flex; justify-content:space-between; align-items:center }
+.drawer-list { list-style:none; padding:0; margin:12px 0 0 0; overflow:auto; flex:1 }
+.drawer-item { padding:12px 0; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center }
+.drawer-item-main { display:flex; gap:12px; align-items:center }
+.drawer-item-actions { display:flex; gap:8px; align-items:center }
+.drawer-footer { border-top:1px solid #eee; padding-top:12px }
+.drawer-actions { display:flex; gap:8px; justify-content:flex-end }
+.secondary { background:#eee; color:#333; }
+.primary { background:#1976d2; color:#fff }
+.bold { font-weight:700 }
+
+.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.35); display:flex; align-items:center; justify-content:center; z-index:70 }
+.modal { background:#fff; border-radius:8px; padding:16px; width:90%; max-width:540px }
+.modal-header { display:flex; justify-content:space-between; align-items:center }
+.modal-body { padding-top:8px }
+.modal img { width:140px; height:140px; object-fit:cover; border-radius:8px; float:left; margin-right:12px }
+.actions { display:flex; gap:8px; align-items:center }
+
+.card .actions button.secondary { padding:6px 8px; background:#f1f1f1; color:#222; border-radius:6px }
+.card .actions button { padding:6px 8px; border-radius:6px }
+
+.description { color:#333; margin:8px 0 }
+
