@@ -13,6 +13,3 @@ Features
 Run
 1. npm install
 2. npm run dev
-
-Notes
-- This is a small demo meant to showcase React fundamentals and clean component design.
